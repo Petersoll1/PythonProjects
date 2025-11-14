@@ -23,3 +23,4 @@ for i in range(len(promenna)):
 for i in range(len(x)):
     if i%2 == 0:
         print(x[i])
+
