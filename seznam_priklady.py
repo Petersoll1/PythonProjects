@@ -1,5 +1,4 @@
 #Úloha 1 - Napište program, který najde největší prvek v poli bez použití funkce.
-from turtledemo.nim import COLOR
 
 pole = [5, 2, 9, 1, 7, 3, 10, 6, 4]
 
@@ -68,3 +67,82 @@ nove_pole = []
 #nevim uz koncime nestiham
 nove_pole.append(pole[0])
 print(nove_pole)
+
+#Úloha 8
+
+pole = [5, 2, 9, 1, 7, 3, 10, 6, 4]
+pole2 = [3, 5, 4, 7, 5, 3, 4, 5, 10]
+
+pole_vysledne = []
+
+for i in range (len(pole)):
+    pole_vysledne.append(pole[i] + pole2[i])
+
+print("-------------------Úloha 8---------------------")
+print(pole_vysledne)
+
+#Úloha 8,5
+
+pole = [5, 2, 9, 1, 7, 3, 10, 6, 4]
+pole2 = [3, 5, 4, 7, 5, 3, 4, 5, 10]
+
+pole_vysledne = []
+
+for i in range(len(pole)):
+    pole_vysledne.append(pole[i] + pole2[-i-1])
+
+print("-------------------Úloha 8,5---------------------")
+print(pole_vysledne)
+
+#Úloha 9
+
+pole3 = [5, 2, 9, 1, 7, 3, 10, 6, 4]
+if pole[0]<pole[1]:
+    nejvetsi = pole[0]
+    druhe_nejvetsi = pole[1]
+else:
+    nejvetsi = pole[1]
+    druhe_nejvetsi = pole[0]
+
+for i in range(len(pole3)):
+    if pole[i] > nejvetsi:
+        druhe_nejvetsi = nejvetsi
+        nejvetsi = pole[i]
+    elif pole[i] > druhe_nejvetsi:
+        druhe_nejvetsi = pole[i]
+
+print("-------------------Úloha 9----------------------")
+print(druhe_nejvetsi)
+
+#Úloha 10, zjistěte zda je pole seřazeno vzestupně.
+
+pole3 = [5, 2, 9, 1, 7, 3, 10, 6, 4]
+je = True
+
+for i in range(len(pole3)-1):
+    if pole[i]> pole[i+1]:
+        je = False
+        break
+
+print("-------------------Úloha 10----------------------")
+
+if je:
+    print("je")
+else:
+    print("neni")
+
+#Úloha 11
+
+pole3 = [5, 2, 9, 1, 7, 3, 10, 6, 4]
+
+sude = 0
+liche = 0
+
+for i in range(len(pole3)):
+    if pole[i]%2 == 0:
+        sude += 1
+    else:
+        liche += 1
+
+print(sude)
+print(liche)
