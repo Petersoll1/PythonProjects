@@ -146,3 +146,11 @@ for i in range(len(pole3)):
 
 print(sude)
 print(liche)
+
+jmeno = input("zadej jmeno: ")
+print("uzivatel zadal " + jmeno)
+
+cislo = input("zadej číslo: ")
+
+print("uživatel zadal číslo: " + cislo)
+print(type(cislo))
